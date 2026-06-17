@@ -24,7 +24,7 @@ import tripleRoom from "../assets/images/Triple room.jpeg";
 
 export const GALLERY_IMAGES = [
   { src: gallery8, alt: "Hotel White Rose", span: "wide" },
-  { src: gallery9, alt: "Hotel White Rose", span: "wide" },
+  // { src: gallery9, alt: "Hotel White Rose", span: "wide" },
   { src: gallery10, alt: "Hotel White Rose", span: "wide" },
   { src: gallery11, alt: "Wooden Staircase and Reception Area", span: "wide" },
   { src: gallery12, alt: "Roof Top Dinning Area", span: "wide" },
