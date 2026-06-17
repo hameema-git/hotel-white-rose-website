@@ -85,7 +85,13 @@ export default function Footer() {
                   <FaMapMarkerAlt />
                   <span>{HOTEL.address}</span>
                 </li>
-                <li>
+               <li>
+              <FaPhone />
+              <a href={`tel:${HOTEL.mobile.replace(/\s/g, '')}`}>
+                {HOTEL.mobile}
+              </a>
+            </li>
+                  <li>
                   <FaPhone />
                   <a href={`tel:${HOTEL.phone}`}>{HOTEL.phone}</a>
                 </li>

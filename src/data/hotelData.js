@@ -25,7 +25,6 @@ import tripleRoom from "../assets/images/Triple room.jpeg";
 export const GALLERY_IMAGES = [
   { src: gallery8, alt: "Hotel White Rose", span: "wide" },
   // { src: gallery9, alt: "Hotel White Rose", span: "wide" },
-  { src: gallery10, alt: "Hotel White Rose", span: "wide" },
   { src: gallery11, alt: "Wooden Staircase and Reception Area", span: "wide" },
   { src: gallery12, alt: "Roof Top Dinning Area", span: "wide" },
   { src: gallery13, alt: "Roof Top Dinning Area Night View", span: "wide" },
@@ -38,6 +37,7 @@ export const GALLERY_IMAGES = [
   { src: gallery15, alt: "Hotel White Rose", span: "wide" },
   { src: gallery6, alt: "Traditional Kerala Architecture", span: "wide" },
   { src: gallery7, alt: "Hotel White Rose Night View", span: "wide" },
+   { src: gallery10, alt: "Hotel White Rose", span: "wide" },
 ];
 export const HOTEL = {
   name: 'Hotel White Rose',
@@ -46,6 +46,7 @@ export const HOTEL = {
   location: 'Fort Kochi, Kerala, India',
   address: 'Hotel White Rose, Fort Nagar, Fort Kochi, Kerala, India - 682001.',
   phone: ' 0484 2216263',
+  mobile: '+91 9847250270',
   whatsapp: '919847250270',
   email: 'hotelwhiterose@gmail.com',
   website: 'https://hotelwhiterose.in',

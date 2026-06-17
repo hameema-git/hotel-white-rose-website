@@ -15,6 +15,12 @@ const CONTACT_ITEMS = [
     value: HOTEL.phone,
     href: `tel:${HOTEL.phone}`,
   },
+   {
+    icon: FaPhone,
+    label: 'Mobile',
+    value: HOTEL.mobile,
+    href: 'tel:+919847250270',
+  },
   {
     icon: FaWhatsapp,
     label: 'WhatsApp',
