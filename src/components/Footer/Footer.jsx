@@ -42,9 +42,9 @@ export default function Footer() {
                 Warm hospitality, comfortable rooms, and memories that last — since 2006.
               </p>
               <div className="footer-social">
-                <a href={HOTEL.socialLinks.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                {/* <a href={HOTEL.socialLinks.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                   <FaFacebook />
-                </a>
+                </a> */}
                 <a href={HOTEL.socialLinks.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                   <FaInstagram />
                 </a>

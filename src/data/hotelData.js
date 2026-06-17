@@ -56,7 +56,7 @@ export const HOTEL = {
     "https://www.google.com/maps/place/Hotel+White+Rose/@9.9663563,76.2419901,16z/data=!3m1!4b1!4m9!3m8!1s0x3b086d3429c41e35:0x322ad193571090fd!5m2!4m1!1i2!8m2!3d9.966351!4d76.244565!16s%2Fg%2F1pp2wz9dg",
   socialLinks: {
     facebook: 'https://facebook.com/hotelwhiterose',
-    instagram: 'https://instagram.com/hotelwhiterose',
+    instagram: 'https://www.instagram.com/whiterose_fortkochi?igsh=MTZrcm5vYm95cjN3OA==',
     tripadvisor: 'https://www.tripadvisor.in/HotelHighlight-g297633-d1019829-Reviews-Hotel_White_Rose-Kochi_Cochin_Ernakulam_District_Kerala.html',
   },
 }
