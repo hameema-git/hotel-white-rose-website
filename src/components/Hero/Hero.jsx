@@ -1,5 +1,5 @@
 import hotelFront1 from "../../assets/images/hotel-front1.jpg";
-import hotelFront2 from "../../assets/images/hotel-front2.JPG";
+import hotelFront2 from "../../assets/images/hotel-front2.jpg";
 import hotelFront3 from "../../assets/images/hotel-front.jpg";
 
 import { FaWhatsapp } from "react-icons/fa";
