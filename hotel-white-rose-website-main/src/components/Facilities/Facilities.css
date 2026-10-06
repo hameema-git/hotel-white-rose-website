@@ -1,0 +1,158 @@
+.facilities-section {
+  background: var(--cream);
+  position: relative;
+}
+
+.facilities-top-deco {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--green), var(--gold), var(--green));
+}
+
+.facilities-intro {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: var(--text-mid);
+  max-width: 500px;
+  margin: 0 auto;
+  font-style: italic;
+}
+
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.fac-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: var(--white);
+  border: 1px solid var(--cream-dark);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  transition: var(--transition);
+  cursor: default;
+}
+.fac-item:hover {
+  border-color: var(--gold);
+  box-shadow: var(--shadow-soft);
+  transform: translateY(-3px);
+}
+
+.fac-icon {
+  width: 42px;
+  height: 42px;
+  background: rgba(31,77,58,0.07);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: var(--green);
+  flex-shrink: 0;
+  transition: var(--transition);
+}
+.fac-item:hover .fac-icon {
+  /* background: var(--green); */
+    background: linear-gradient(
+    135deg,
+    #556B2F 0%,
+    #6B7D3A 50%,
+    #7A8F42 100%
+  );
+  color: var(--gold-light);
+}
+
+.fac-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.fac-label {
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+.fac-desc {
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  color: var(--text-light);
+  line-height: 1.4;
+}
+
+/* Ayurvedic feature band */
+.facilities-band {
+  margin-top: 3.5rem;
+  /* background: var(--green-dark);
+   */
+     background: linear-gradient(
+    135deg,
+    #556B2F 0%,
+    #6B7D3A 50%,
+    #7A8F42 100%
+  );
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.band-text {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.band-eyebrow {
+  font-family: var(--font-ui);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+.band-text h3 {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  color: var(--white);
+  line-height: 1.2;
+}
+.band-text p {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.8;
+  margin: 0;
+}
+
+.band-image {
+  height: 280px;
+  overflow: hidden;
+}
+.band-image img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.facilities-band:hover .band-image img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1200px) {
+  .facilities-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 768px) {
+  .facilities-grid { grid-template-columns: repeat(2, 1fr); }
+  .facilities-band { grid-template-columns: 1fr; }
+  .band-text { padding: 2rem; }
+  .band-image { height: 200px; }
+}
+@media (max-width: 480px) {
+  .facilities-grid { grid-template-columns: 1fr; }
+}

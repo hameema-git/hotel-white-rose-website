@@ -133,13 +133,13 @@ export const NEARBY = [
   {
     name: 'Fort Kochi Binale Venue',
   distance: '10 min walk',
-  description: "Experience the renowned Kochi-Muziris Biennale, India's largest contemporary art exhibition featuring international artists, heritage venues, and cultural events.",
+  description: 'Experience the renowned Kochi-Muziris Biennale, India's largest contemporary art exhibition featuring international artists, heritage venues, and cultural events.',
   icon: '🎨',
 },
 {
   name: 'Water Metro Terminal',
   distance: '12 min drive',
-  description: "Enjoy Kochi's modern Water Metro service connecting islands and city destinations through scenic waterfront journeys.",
+  description: 'Enjoy Kochi's modern Water Metro service connecting islands and city destinations through scenic waterfront journeys.',
   icon: '🚢',
 },
 

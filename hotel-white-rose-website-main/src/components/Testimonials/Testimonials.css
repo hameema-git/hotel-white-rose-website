@@ -1,0 +1,403 @@
+/* ==========================================
+   Testimonials Section - Hotel White Rose
+   ========================================== */
+
+.testimonials-section {
+  background: var(--cream);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle background pattern */
+.testimonials-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image:
+    radial-gradient(circle at 8% 50%, rgba(31, 77, 58, 0.04) 0%, transparent 55%),
+    radial-gradient(circle at 92% 20%, rgba(212, 163, 115, 0.06) 0%, transparent 45%);
+  pointer-events: none;
+}
+
+/* TripAdvisor badge */
+.tripadvisor-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(52, 178, 51, 0.08);
+  border: 1px solid rgba(52, 178, 51, 0.25);
+  border-radius: 20px;
+  padding: 0.35rem 1rem;
+  margin-top: 0.5rem;
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #2a9128;
+}
+.ta-icon {
+  font-size: 1rem;
+  color: #34b233;
+}
+
+/* Rating summary bar */
+.rating-summary {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: var(--white);
+  border: 1px solid var(--cream-dark);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 2rem;
+  margin-bottom: 2.5rem;
+  box-shadow: var(--shadow-soft);
+  flex-wrap: wrap;
+}
+
+.rating-big {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--green);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.rating-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.star-row {
+  display: flex;
+  gap: 0.2rem;
+}
+.star-filled {
+  color: #f5a623;
+  font-size: 0.9rem;
+}
+.star-empty {
+  color: #d0d0d0;
+  font-size: 0.9rem;
+}
+
+.rating-count {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  color: var(--text-light);
+  letter-spacing: 0.04em;
+}
+
+.rating-divider {
+  width: 1px;
+  height: 40px;
+  background: var(--cream-dark);
+  flex-shrink: 0;
+}
+
+.rating-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.rating-tag {
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  font-weight: 500;
+  background: rgba(31, 77, 58, 0.07);
+  color: var(--green);
+  padding: 0.25rem 0.7rem;
+  border-radius: 20px;
+  border: 1px solid rgba(31, 77, 58, 0.12);
+}
+
+/* Main carousel */
+.testimonial-carousel {
+  position: relative;
+  background: var(--green);
+  border-radius: var(--radius-lg);
+  padding: 3rem 3rem 2rem;
+  margin-bottom: 1.5rem;
+  min-height: 280px;
+  overflow: hidden;
+}
+
+/* Decorative background texture on green card */
+.testimonial-carousel::after {
+  content: '';
+  position: absolute;
+  bottom: -20px; right: -20px;
+  width: 180px; height: 180px;
+  background: radial-gradient(circle, rgba(212,163,115,0.12) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Large quote decoration */
+.quote-deco {
+  position: absolute;
+  top: 1.5rem; left: 2rem;
+  font-size: 4rem;
+  color: rgba(212, 163, 115, 0.18);
+  line-height: 1;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Review card (inside carousel) */
+.testimonial-card {
+  position: relative;
+  z-index: 1;
+}
+
+.reviewer-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.reviewer-avatar {
+  width: 52px;
+  height: 52px;
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--green-dark);
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.reviewer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  flex: 1;
+}
+
+.reviewer-name {
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: 0.03em;
+}
+
+.reviewer-date {
+  font-family: var(--font-ui);
+  font-size: 0.70rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.reviewer-rating {
+  margin-left: auto;
+}
+.reviewer-rating .star-filled {
+  color: var(--gold-light);
+  font-size: 0.85rem;
+}
+
+/* Review body text */
+.review-text {
+  font-family: var(--font-body);
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+/* Review label tags */
+.review-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.review-tag {
+  font-family: var(--font-ui);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: rgba(212, 163, 115, 0.18);
+  color: var(--gold-light);
+  border: 1px solid rgba(212, 163, 115, 0.3);
+  padding: 0.25rem 0.7rem;
+  border-radius: 20px;
+}
+
+/* Carousel nav controls */
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.carousel-btn {
+  width: 38px;
+  height: 38px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+.carousel-btn:hover {
+  background: rgba(212, 163, 115, 0.25);
+  border-color: var(--gold);
+  color: var(--gold-light);
+  transform: scale(1.08);
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  padding: 0;
+}
+.carousel-dot.active {
+  background: var(--gold);
+  transform: scale(1.3);
+}
+
+/* Mini review cards row */
+.mini-reviews-row {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+  scrollbar-width: none;
+}
+.mini-reviews-row::-webkit-scrollbar { display: none; }
+
+.mini-review-card {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 1rem;
+  background: var(--white);
+  border: 1.5px solid var(--cream-dark);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition);
+  text-align: left;
+  min-width: 160px;
+}
+.mini-review-card:hover {
+  border-color: var(--gold);
+  box-shadow: var(--shadow-soft);
+  transform: translateY(-2px);
+}
+.mini-review-card.active {
+  border-color: var(--green);
+  background: rgba(31, 77, 58, 0.04);
+}
+
+.mini-avatar {
+  width: 34px;
+  height: 34px;
+  background: linear-gradient(135deg, var(--gold-light), var(--gold));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--green-dark);
+  flex-shrink: 0;
+}
+
+.mini-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.mini-date {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  color: var(--text-light);
+}
+
+/* TripAdvisor CTA */
+.ta-cta {
+  text-align: center;
+}
+
+.ta-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-ui);
+  font-size: 0.80rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: #2a9128;
+  background: rgba(52, 178, 51, 0.08);
+  border: 1.5px solid rgba(52, 178, 51, 0.3);
+  padding: 0.7rem 1.5rem;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: var(--transition);
+}
+.ta-cta-btn:hover {
+  background: #34b233;
+  border-color: #34b233;
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(52, 178, 51, 0.25);
+}
+.ta-cta-btn svg {
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .testimonial-carousel {
+    padding: 2rem 1.5rem 1.5rem;
+    min-height: 240px;
+  }
+  .quote-deco { font-size: 3rem; }
+  .review-text { font-size: 1rem; }
+  .rating-summary {
+    gap: 1rem;
+    padding: 1.25rem;
+  }
+  .rating-big { font-size: 2.5rem; }
+  .rating-divider { display: none; }
+}
+
+@media (max-width: 480px) {
+  .reviewer-header { flex-direction: column; align-items: flex-start; }
+  .reviewer-rating { margin-left: 0; }
+  .mini-reviews-row { gap: 0.5rem; }
+  .mini-review-card { min-width: 140px; padding: 0.6rem 0.75rem; }
+}
